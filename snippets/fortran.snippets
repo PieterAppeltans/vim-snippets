@@ -3,10 +3,14 @@ snippet impl
 		${0}
 snippet prog
 	program ${1:main}
+		implicit none
 		${0}
 	end program $1
 snippet mod
 	module ${1:modulename}
+		implicit none
+		${0}
+		contains
 		${0}
 	end module $1
 snippet proc
